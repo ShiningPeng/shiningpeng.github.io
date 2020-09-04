@@ -4,6 +4,33 @@
   
   
   <entry>
+    <title>使用github pages在线运行自己写的react/vue项目</title>
+    <link href="/2020/09/05/article-2/"/>
+    <url>/2020/09/05/article-2/</url>
+    
+    <content type="html"><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><ul><li>因为自己需要用到这项功能，所以花了点时间搞懂了，并记录下来</li></ul><h2 id="前置"><a href="#前置" class="headerlink" title="前置"></a>前置</h2><ul><li><p>自己的项目已经正常add,commit,push到GitHub仓库</p><h2 id="步骤"><a href="#步骤" class="headerlink" title="步骤"></a>步骤</h2></li><li><p>这里将以 react项目为例，vue项目也是一样的步骤，只是 react 打包完成的文件夹叫build，而 vue 项目打包完成的文件夹叫 dist，所以 vue 项目的过程只需要将下列命令 add 和 push 中的 build 改为 dist 就行</p><h4 id="本地项目打开命令行，依次执行以下命令"><a href="#本地项目打开命令行，依次执行以下命令" class="headerlink" title="本地项目打开命令行，依次执行以下命令"></a>本地项目打开命令行，依次执行以下命令</h4><pre><code class="hljs js">git checkout -b gh-pages  <span class="hljs-comment">//创建并切换到gh-pages分支</span>npm run build <span class="hljs-comment">//将此项目打包，会生成一个build文件夹</span>git add -f build  <span class="hljs-comment">//将build文件夹提交，-f参数是因为build目录放在.gitignore文件中，需要强制提交</span>git commit -m <span class="hljs-string">&#x27;备注&#x27;</span>git subtree push --prefix build origin gh-pages <span class="hljs-comment">//部署build目录下的代码</span></code></pre><h4 id="检查是否部署成功"><a href="#检查是否部署成功" class="headerlink" title="检查是否部署成功"></a>检查是否部署成功</h4></li><li><p>打开GitHub进入该项目，找到setting按钮，一直往下滑会看到这个<br><img src="/img/example.png"><br>因为我自己绑定了域名，所以是这样，没有绑定域名的话，出现的就是<strong>https://你的用户名.github.io/项目名</strong>，然后就可以点击这个链接查看了<br><img src="/img/example2.png"></p></li></ul><h4 id="可能出现的问题"><a href="#可能出现的问题" class="headerlink" title="可能出现的问题"></a>可能出现的问题</h4><ul><li>本地push分支的时候报错，non-fast-forward，我对这个分支的操作不是特别熟悉，害怕把代码弄乱，于是没有按照百度结果那样fetch，merge，或者说pull，我把这个分支删掉从头来过了一遍之后就好了，熟悉git操作的朋友可自行解决或者可以按照百度方法解决。 </li><li>部署上去之后点击链接跳转到的页面是github提供的404页面，这可能是因为没有完成更新，查看链接左侧时看不到一个绿色的钩，绿钩出现后至少可以访问了。 </li><li>部署上去之后点击链接跳转到的页面是空白的，并且查看页面结构只有一个noscript标签，在控制台能看到很多404报错，这是因为css和js文件没有加载出来，我不确定是怎么解决的，一可能是因为GitHub更新的有点慢，过几分钟再看看就能看到页面出现了。二可能是打包文件的引入css,js文件的路径有问题（查了一下看到的），于是我手动把路径改成了相对路径，过了一会后访问发现页面出现了 </li></ul><h2 id="结语"><a href="#结语" class="headerlink" title="结语"></a>结语</h2><ul><li>此文主要描述了实现的基本过程，可能有些地方有错误，欢迎指出一起交流</li></ul>]]></content>
+    
+    
+    <categories>
+      
+      <category>教程</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>github pages</tag>
+      
+      <tag>webapp</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>从0到1使用 Hexo 框架搭建个人博客并部署到 GitHub Pages</title>
     <link href="/2020/09/04/article-1/"/>
     <url>/2020/09/04/article-1/</url>
