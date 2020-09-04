@@ -173,7 +173,7 @@
     
     <span class="post-meta mr-2">
       <i class="iconfont icon-chart"></i>
-      1.5k 字
+      1.6k 字
     </span>
   
 
@@ -183,7 +183,7 @@
       <i class="iconfont icon-clock-fill"></i>
       
       
-      16
+      17
        分钟
     </span>
   
@@ -240,10 +240,14 @@ npm install</code></pre></li>
 <li>生成的文件具体是做什么的可以去看<a target="_blank" rel="noopener" href="https://hexo.io/zh-cn/docs/setup">官方文档</a></li>
 <li>hexo generate，运行时可缩写为hexo g，用来生成静态文件</li>
 <li>hexo server，可缩写为 hexo s，在本地启动服务器预览，默认为 <a target="_blank" rel="noopener" href="http://localhost:4000/">http://localhost:4000/</a></li>
-<li>hexo deploy，部署网站</li>
-<li>hexo clean ，清除缓存文件 (db.json) 和已生成的静态文件 (public)。在某些情况（尤其是更换主题后），如果发现您对站点的更改无论如何也不生效，您可能需要运行该命令</li>
+<li>hexo deploy，部署网站到GitHub</li>
+</ul>
+<p><strong>到这，一个完整的部署过程就完成了</strong></p>
+<hr>
+<ul>
+<li>hexo clean ，清除缓存文件 (db.json) 和已生成的静态文件 (public)。在某些情况（尤其是更换主题后），如果发现您对站点的更改无论如何也不生效，您可能需要运行该命令。</li>
 <li>在source目录下新建文件 CNAME ，此文件没有后缀名，用来存放域名，可以防止每次重新部署网站后GitHub pages的custom domain变为空，在文件中写入你的域名，可以不写www，没有域名可以不用建这个文件</li>
-<li>安装 hexo-deployer-git，一键部署，将网站更新推送到GitHub<pre><code class="hljs bash">npm install hexo-deployer-git --save</code></pre></li>
+<li>安装 hexo-deployer-git，一键部署插件，将网站更新推送到GitHub<pre><code class="hljs bash">npm install hexo-deployer-git --save</code></pre></li>
 <li>安装好后修改配置文件 _config.yml，一般是在文件最底部，修改为这样<pre><code class="hljs yml"><span class="hljs-attr">deploy:</span>
   <span class="hljs-attr">type:</span> <span class="hljs-string">git</span>
   <span class="hljs-attr">repo:</span> <span class="hljs-string">&lt;repository</span> <span class="hljs-string">url&gt;</span> <span class="hljs-comment">#例如我的为 https://github.com/ShiningPeng/shiningpeng.github.io</span>
@@ -278,6 +282,9 @@ index<span class="hljs-emphasis">_img: /img/hexo.png</span>
 <li>写完文章之后执行<pre><code class="hljs bash">hexo g -d</code></pre>
 这条命令的意思是：生成新的静态文件后直接部署到GitHub</li>
 <li>需要注意的是部署之后访问github.io 或者自己的域名可能发现刷新之后并没有看到自己刚写的文章，这时我们等一会就好了，过几分钟就刷新出来了</li>
+</ul>
+<h3 id="结语"><a href="#结语" class="headerlink" title="结语"></a>结语</h3><ul>
+<li>可能文章写的不是特别详细，文章有错误的地方可以指出，执行过程中遇到问题也可以留言交流</li>
 </ul>
 
             </div>
