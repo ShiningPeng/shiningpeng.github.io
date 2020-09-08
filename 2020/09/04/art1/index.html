@@ -18,7 +18,7 @@
   <meta name="description" content="ShiningPeng&#39;s Blog">
   <meta name="author" content="ShiningPeng">
   <meta name="keywords" content="">
-  <title>我的第一次实习 - ShiningPeng&#39;s Blog</title>
+  <title>从0到1使用 Hexo 框架搭建个人博客并部署到 GitHub Pages - ShiningPeng&#39;s Blog</title>
 
   <link  rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/4.4.1/css/bootstrap.min.css" />
 
@@ -150,7 +150,7 @@
 </nav>
 
     <div class="banner intro-2" id="background" parallax=true
-         style="background: url('/img/winter.jpg') no-repeat center center;
+         style="background: url('/img/hexo.png') no-repeat center center;
            background-size: cover;">
       <div class="full-bg-img">
         <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
@@ -163,8 +163,8 @@
               
   <div class="mt-3 post-meta">
     <i class="iconfont icon-date-fill" aria-hidden="true"></i>
-    <time datetime="2020-09-07 23:51" pubdate>
-      2020年9月7日 晚上
+    <time datetime="2020-09-04 05:40" pubdate>
+      2020年9月4日 凌晨
     </time>
   </div>
 
@@ -174,7 +174,7 @@
     
     <span class="post-meta mr-2">
       <i class="iconfont icon-chart"></i>
-      519 字
+      1.6k 字
     </span>
   
 
@@ -184,7 +184,7 @@
       <i class="iconfont icon-clock-fill"></i>
       
       
-      5
+      17
        分钟
     </span>
   
@@ -222,23 +222,76 @@
         <div class="py-5" id="board">
           <article class="post-content mx-auto" id="post">
             <!-- SEO header -->
-            <h1 style="display: none">我的第一次实习</h1>
+            <h1 style="display: none">从0到1使用 Hexo 框架搭建个人博客并部署到 GitHub Pages</h1>
             
               <p class="note note-info">
                 
-                  本文最后更新于：几秒前
+                  本文最后更新于：15 小时前
                 
               </p>
             
             <div class="markdown-body" id="post-body">
-              <h2 id="无序列表"><a href="#无序列表" class="headerlink" title="无序列表"></a>无序列表</h2><ul>
-<li>今天第一天实习，虽然是一个外包公司，但的确也能学到很多东西，比如自己没接触过的技术、工具软件或者说团队协作</li>
-<li>进入公司先了解了公司的基本情况以及近阶段在进行的项目，开始上班后先是下载一些软件，然后注册账号加入团队进行协作，公司使用的是vue结合uniapp进行开发，了解了以下，好像挺吊的，今天使用到了git的可视化管理工具sourcetree；UI工具蓝湖，哪里不会点哪里；</li>
-<li>最近的项目有区块链项目和个别政府项目，都不熟悉业务，所以安排了几个登录注册的页面给我写。从这就可出了自己的功底并不扎实，写页面出现一些问题：样式讲真以前不是很在意，就觉得学会vue，react就行，就能工作，但那也只停留在学习阶段。真正投入生产，工作就会发现力不从心，还是要重视基础。</li>
-<li>记个笔记：UI做好的设计稿都是两倍像素的，所以写页面时要注意。</li>
-<li>前一天晚上不知怎的，一点躺下躺了一个小时没睡着，或许是紧张或许是兴奋，于是深夜食堂，点了一份炸鸡，精精神神的五点多才睡，七点半起，七点五十出学校与另一个小伙伴汇合，晃晃悠悠的到了公司附近，骑的共享电动车，到了才发现没有停车点，我淦。于是忽悠工作人员忽悠半天终于好了，然后找到公司具体位置。午饭吃的浏阳蒸菜，晚餐吃的烤鸭饭，真香。</li>
-<li>晚上八点多下班走了一段到公交站，等了十几分钟的单程214直达学校，公交车上坐下的时候就感觉身体被掏空，确实有点累，或许是没休息好，以后得早点睡。</li>
-<li>加油！</li>
+              <h3 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h3><p>也是最近一周才知道有<a target="_blank" rel="noopener" href="https://docs.github.com/cn/github/working-with-github-pages/about-github-pages">Github Pages</a>这个东西，它是一个免费的服务器，可以使用 GitHub Pages 直接从 GitHub 仓库托管关于自己、您的组织或您的项目的站点。因为最近好多小伙伴都购买了域名和服务器来托管自己写的项目，于是我也屁颠屁颠地买了一个域名，并在这两天投入个人博客的搭建。在百度教程的时候看到比较多推荐的一个搭建博客的框架<a target="_blank" rel="noopener" href="https://hexo.io/zh-cn/docs/">hexo</a>，然后就使用这个框架将博客搭建起来了，目前只是将博客一些基础的结构和功能弄好了，感兴趣的可以看看<a href="http://shiningpeng.top/">我的博客</a>，话不多说进入正题。</p>
+<h2 id="步骤"><a href="#步骤" class="headerlink" title="步骤"></a>步骤</h2><h3 id="前置步骤：安装好-git-和-node-js"><a href="#前置步骤：安装好-git-和-node-js" class="headerlink" title="前置步骤：安装好 git 和 node.js"></a>前置步骤：安装好 git 和 node.js</h3><h3 id="GitHub-Pages-部分"><a href="#GitHub-Pages-部分" class="headerlink" title="GitHub Pages 部分"></a>GitHub Pages 部分</h3><ul>
+<li>在GitHub新建仓库，并且仓库名必须为 你的用户名.github.io  ，这里的用户名不区分大小写，都会转化为小写字母，比如我的用户名 ShiningPeng， 我建的仓库名字 shiningpeng.github.io </li>
+<li>至少上传一次文件激活github pages，可以在初始化仓库时添加一个readme文件，或者可以按照创建完仓库后的命令行提示，直接把那一串命令放在一个新的文件夹 git bash 命令行中执行</li>
+<li>自定义域名，如果你购买了域名，可以在 用户名.github.io 这个仓库的 setting 中一直往下滑找到 custom domain，把域名填进去，并点击 save 保存</li>
+</ul>
+<h3 id="本地-hexo-部分"><a href="#本地-hexo-部分" class="headerlink" title="本地 hexo 部分"></a>本地 hexo 部分</h3><ul>
+<li>本地找个心仪的目录建个文件夹，鼠标右键git bash</li>
+<li>使用npm安装脚手架 hexo-cli，当然也可以使用cnpm（需要下载淘宝镜像）<pre><code class="hljs bash">npm install -g hexo-cli</code></pre></li>
+<li>安装hexo<pre><code class="hljs bash">npm install hexo</code></pre></li>
+<li>初始化hexo，并安装依赖<pre><code class="hljs bash">hexo init 文件夹名称
+<span class="hljs-built_in">cd</span> 文件夹名称
+npm install</code></pre></li>
+<li>生成的文件具体是做什么的可以去看<a target="_blank" rel="noopener" href="https://hexo.io/zh-cn/docs/setup">官方文档</a></li>
+<li>hexo generate，运行时可缩写为hexo g，用来生成静态文件</li>
+<li>hexo server，可缩写为 hexo s，在本地启动服务器预览，默认为 <a target="_blank" rel="noopener" href="http://localhost:4000/">http://localhost:4000/</a></li>
+<li>hexo deploy，部署网站到GitHub</li>
+</ul>
+<p><strong>到这，一个完整的部署过程就完成了</strong></p>
+<hr>
+<ul>
+<li>hexo clean ，清除缓存文件 (db.json) 和已生成的静态文件 (public)。在某些情况（尤其是更换主题后），如果发现您对站点的更改无论如何也不生效，您可能需要运行该命令。</li>
+<li>在source目录下新建文件 CNAME ，此文件没有后缀名，用来存放域名，可以防止每次重新部署网站后GitHub pages的custom domain变为空，在文件中写入你的域名，可以不写www，没有域名可以不用建这个文件</li>
+<li>安装 hexo-deployer-git，一键部署插件，将网站更新推送到GitHub<pre><code class="hljs bash">npm install hexo-deployer-git --save</code></pre></li>
+<li>安装好后修改配置文件 _config.yml，一般是在文件最底部，修改为这样<pre><code class="hljs yml"><span class="hljs-attr">deploy:</span>
+  <span class="hljs-attr">type:</span> <span class="hljs-string">git</span>
+  <span class="hljs-attr">repo:</span> <span class="hljs-string">&lt;repository</span> <span class="hljs-string">url&gt;</span> <span class="hljs-comment">#例如我的为 https://github.com/ShiningPeng/shiningpeng.github.io</span>
+  <span class="hljs-attr">branch:</span> [<span class="hljs-string">branch</span>]    <span class="hljs-comment"># 分支</span>
+  <span class="hljs-attr">message:</span> [<span class="hljs-string">message</span>]  <span class="hljs-comment"># 平常commit时的提交备注</span></code></pre></li>
+<li>修改完文件hexo s预览无误之后，hexo clean,hexo g,hexo d 一把梭，建议还是在部署之前执行一遍clean</li>
+</ul>
+<h3 id="更换主题"><a href="#更换主题" class="headerlink" title="更换主题"></a>更换主题</h3><ul>
+<li>主题可以从<a target="_blank" rel="noopener" href="https://hexo.io/themes/">hexo主题</a>中挑选一个喜欢的，然后点击蓝色文字进入主题，点击图片是进入这个主题的示例网站，不过有的网站可能更换域名或者域名过期了访问不了。点击蓝色文字后跳转到主题的GitHub源码地址，可以从readme查看该主题的应用步骤，或者点击提供的用户文档了解应用过程</li>
+<li>一般主题的应用步骤<ol>
+<li>在本地博客的那个文件夹下有一个themes目录存放主题，默认是landscape，在themes目录下打开命令行，将该主题源码克隆到本地，例如<pre><code class="hljs bash">git <span class="hljs-built_in">clone</span> https://github.com/fluid-dev/hexo-theme-fluid.git fluid</code></pre>
+命令中项目地址后面是给这个主题取个别名，方便后面使用，不改默认为仓库名，生成一个以此为名的文件夹</li>
+<li>在根目录找到_config.yml文件，滑到最下方，找到 theme 字段，将landscape改为你刚取的别名，如果没取别名就改为仓库名</li>
+<li>hexo clean, hexo g, hexo s 预览效果，一般主题会为你做好很多事情，<strong>基本上不需要自己写什么文件，只需要改改配置就能完成比较好的功能</strong>，比如网站的布局啊，样式啊，路由等等，确认无误之后就可以hexo d 了。</li>
+<li>需要改配置的话可以根据这个主题提供的文档来做适当的更改</li>
+</ol>
+</li>
+</ul>
+<h3 id="日常更新"><a href="#日常更新" class="headerlink" title="日常更新"></a>日常更新</h3><p><strong>这里我讲下写一篇文章的步骤</strong></p>
+<ul>
+<li>项目根目录下运行<pre><code class="hljs bash">hexo new post 文件名</code></pre>
+这里的文件名建议写英文，到时候访问文章可以看到浏览器的地址栏显示的正是这个文件名，如果是中文的文件名，url就会比较长，不太美观。</li>
+<li>在 根目录 -&gt; source -&gt; _post 目录下找到新生成的文件进行编辑<pre><code class="hljs md">---
+title: 从0到1使用 Hexo 框架搭建个人博客并部署到 GitHub Pages
+date: 2020-09-04 05:40:26
+tags: [Hexo, Fluid]
+categories: &quot;教程&quot;
+index<span class="hljs-emphasis">_img: /img/hexo.png</span>
+<span class="hljs-emphasis">banner_</span>img: /img/hexo.png
+---</code></pre>
+需要图片的话可以将图片放在本地，或者引入在线图片，然后给文章添加标签和分类等属性，具体有哪些属性可以查看文档慢慢熟悉，编辑完头部之后，在这下方就可以开始编辑文字内容了</li>
+<li>写完文章之后执行<pre><code class="hljs bash">hexo g -d</code></pre>
+这条命令的意思是：生成新的静态文件后直接部署到GitHub</li>
+<li>需要注意的是部署之后访问github.io 或者自己的域名可能发现刷新之后并没有看到自己刚写的文章，这时我们等一会就好了，过几分钟就刷新出来了</li>
+</ul>
+<h2 id="结语"><a href="#结语" class="headerlink" title="结语"></a>结语</h2><ul>
+<li>可能文章写的不是特别详细，文章有错误的地方可以指出，执行过程中遇到问题也可以留言交流</li>
 </ul>
 
             </div>
@@ -249,7 +302,7 @@
                   <div class="post-meta mr-3">
                     <i class="iconfont icon-category"></i>
                     
-                      <a class="hover-with-bg" href="/categories/%E6%97%A5%E8%AE%B0/">日记</a>
+                      <a class="hover-with-bg" href="/categories/%E6%95%99%E7%A8%8B/">教程</a>
                     
                   </div>
                 
@@ -257,9 +310,9 @@
                   <div class="post-meta">
                     <i class="iconfont icon-tags"></i>
                     
-                      <a class="hover-with-bg" href="/tags/%E5%AE%9E%E4%B9%A0/">实习</a>
+                      <a class="hover-with-bg" href="/tags/Hexo/">Hexo</a>
                     
-                      <a class="hover-with-bg" href="/tags/%E7%94%9F%E6%B4%BB/">生活</a>
+                      <a class="hover-with-bg" href="/tags/Fluid/">Fluid</a>
                     
                   </div>
                 
@@ -272,12 +325,18 @@
                   <article class="post-prev col-6">
                     
                     
+                      <a href="/2020/09/05/art2/">
+                        <i class="iconfont icon-arrowleft"></i>
+                        <span class="hidden-mobile">使用github pages在线运行自己写的react/vue项目</span>
+                        <span class="visible-mobile">上一篇</span>
+                      </a>
+                    
                   </article>
                   <article class="post-next col-6">
                     
                     
-                      <a href="/2020/09/05/article-2/">
-                        <span class="hidden-mobile">使用github pages在线运行自己写的react/vue项目</span>
+                      <a href="/2020/09/04/hello-world/">
+                        <span class="hidden-mobile">Hello World</span>
                         <span class="visible-mobile">下一篇</span>
                         <i class="iconfont icon-arrowright"></i>
                       </a>
@@ -476,7 +535,7 @@
     var typed = new Typed('#subtitle', {
       strings: [
         '  ',
-        "我的第一次实习&nbsp;",
+        "从0到1使用 Hexo 框架搭建个人博客并部署到 GitHub Pages&nbsp;",
       ],
       cursorChar: "_",
       typeSpeed: 70,

@@ -18,7 +18,7 @@
   <meta name="description" content="ShiningPeng&#39;s Blog">
   <meta name="author" content="ShiningPeng">
   <meta name="keywords" content="">
-  <title>使用github pages在线运行自己写的react/vue项目 - ShiningPeng&#39;s Blog</title>
+  <title>上班第二天 - ShiningPeng&#39;s Blog</title>
 
   <link  rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/4.4.1/css/bootstrap.min.css" />
 
@@ -150,7 +150,7 @@
 </nav>
 
     <div class="banner intro-2" id="background" parallax=true
-         style="background: url('/img/winter.jpg') no-repeat center center;
+         style="background: url('/img/default.png') no-repeat center center;
            background-size: cover;">
       <div class="full-bg-img">
         <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
@@ -163,8 +163,8 @@
               
   <div class="mt-3 post-meta">
     <i class="iconfont icon-date-fill" aria-hidden="true"></i>
-    <time datetime="2020-09-05 01:40" pubdate>
-      2020年9月5日 凌晨
+    <time datetime="2020-09-08 09:27" pubdate>
+      2020年9月8日 上午
     </time>
   </div>
 
@@ -174,7 +174,7 @@
     
     <span class="post-meta mr-2">
       <i class="iconfont icon-chart"></i>
-      668 字
+      390 字
     </span>
   
 
@@ -184,7 +184,7 @@
       <i class="iconfont icon-clock-fill"></i>
       
       
-      7
+      3
        分钟
     </span>
   
@@ -222,38 +222,30 @@
         <div class="py-5" id="board">
           <article class="post-content mx-auto" id="post">
             <!-- SEO header -->
-            <h1 style="display: none">使用github pages在线运行自己写的react/vue项目</h1>
+            <h1 style="display: none">上班第二天</h1>
             
               <p class="note note-info">
                 
-                  本文最后更新于：3 天前
+                  本文最后更新于：几秒前
                 
               </p>
             
             <div class="markdown-body" id="post-body">
-              <h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><ul>
-<li>因为自己需要用到这项功能，所以花了点时间搞懂了，并记录下来</li>
-</ul>
-<h2 id="前置"><a href="#前置" class="headerlink" title="前置"></a>前置</h2><ul>
-<li><p>自己的项目已经正常add,commit,push到GitHub仓库</p>
-<h2 id="步骤"><a href="#步骤" class="headerlink" title="步骤"></a>步骤</h2></li>
-<li><p>这里将以 react项目为例，vue项目也是一样的步骤，只是 react 打包完成的文件夹叫build，而 vue 项目打包完成的文件夹叫 dist，所以 vue 项目的过程只需要将下列命令 add 和 push 中的 build 改为 dist 就行</p>
-<h4 id="本地项目打开命令行，依次执行以下命令"><a href="#本地项目打开命令行，依次执行以下命令" class="headerlink" title="本地项目打开命令行，依次执行以下命令"></a>本地项目打开命令行，依次执行以下命令</h4><pre><code class="hljs js">git checkout -b gh-pages  <span class="hljs-comment">//创建并切换到gh-pages分支</span>
-npm run build <span class="hljs-comment">//将此项目打包，会生成一个build文件夹</span>
-git add -f build  <span class="hljs-comment">//将build文件夹提交，-f参数是因为build目录放在.gitignore文件中，需要强制提交</span>
-git commit -m <span class="hljs-string">&#x27;备注&#x27;</span>
-git subtree push --prefix build origin gh-pages <span class="hljs-comment">//部署build目录下的代码</span></code></pre>
-<h4 id="检查是否部署成功"><a href="#检查是否部署成功" class="headerlink" title="检查是否部署成功"></a>检查是否部署成功</h4></li>
-<li><p>打开GitHub进入该项目，找到setting按钮，一直往下滑会看到这个<br><img src="/img/example.png" srcset="/img/loading.gif"><br>因为我自己绑定了域名，所以是这样，没有绑定域名的话，出现的就是<strong>https://你的用户名.github.io/项目名</strong>，然后就可以点击这个链接查看了<br><img src="/img/example2.png" srcset="/img/loading.gif"></p>
+              <h2 id="上班第二天"><a href="#上班第二天" class="headerlink" title="上班第二天"></a>上班第二天</h2><ul>
+<li><p>以后早上都是乘公交上班，因为这边没有助力车的停车点，第一次坐公交来上班，于是迷路了，第一天能找到路还是小伙伴带的。高德地图我居然看不懂，定位在万达里面，我转了半个小时，后来在万达里一个便利店买了瓶水问了以下收银，人家说在外面，果然转出来之后过了个红绿灯就到了。。。</p>
 </li>
-</ul>
-<h4 id="可能出现的问题"><a href="#可能出现的问题" class="headerlink" title="可能出现的问题"></a>可能出现的问题</h4><ul>
-<li>本地push分支的时候报错，non-fast-forward，我对这个分支的操作不是特别熟悉，害怕把代码弄乱，于是没有按照百度结果那样fetch，merge，或者说pull，我把这个分支删掉从头来过了一遍之后就好了，熟悉git操作的朋友可自行解决或者可以按照百度方法解决。 </li>
-<li>部署上去之后点击链接跳转到的页面是github提供的404页面，这可能是因为没有完成更新，查看链接左侧时看不到一个绿色的钩，绿钩出现后至少可以访问了。 </li>
-<li>部署上去之后点击链接跳转到的页面是空白的，并且查看页面结构只有一个noscript标签，在控制台能看到很多404报错，这是因为css和js文件没有加载出来，我不确定是怎么解决的，一可能是因为GitHub更新的有点慢，过几分钟再看看就能看到页面出现了。二可能是打包文件的引入css,js文件的路径有问题（查了一下看到的），于是我手动把路径改成了相对路径，过了一会后访问发现页面出现了 </li>
-</ul>
-<h2 id="结语"><a href="#结语" class="headerlink" title="结语"></a>结语</h2><ul>
-<li>此文主要描述了实现的基本过程，可能有些地方有错误，欢迎指出一起交流</li>
+<li><p>span标签放img放图标，导致无法和其他行内元素对其，学长帮我看了以下，加了一行代码</p>
+<pre><code class="hljs css"><span class="hljs-selector-tag">line-height</span><span class="hljs-selector-pseudo">:0px</span>;</code></pre>
+<p>问题解决</p>
+</li>
+<li><p>抽离一个组件手机号和验证码，尽量考虑完整组件出现的各种状态，或者说出现没考虑到的需求直接修改组件便可，设置默认值，通过父组件绑定属性将值传给子组件，以前看了一点element源码，所以感觉写这个组件挺顺手的</p>
+</li>
+<li><p>写了一个tab切换功能，特别的样式写在active类名上，使用v-show控制出现在页面的tab内容</p>
+</li>
+<li><p>晚上七点半下班坐公交回学校，学校操场跑了三圈，确实胖了，减一减。</p>
+</li>
+<li><p>一般回学校后都会花一两个小时时间时间尽量完成在公司没完成的任务，然后推送。第二天一早拉取下来，有个老哥带我还挺好，逐渐和同事们熟悉起来，不会像刚去那么陌生。</p>
+</li>
 </ul>
 
             </div>
@@ -264,7 +256,7 @@ git subtree push --prefix build origin gh-pages <span class="hljs-comment">//部
                   <div class="post-meta mr-3">
                     <i class="iconfont icon-category"></i>
                     
-                      <a class="hover-with-bg" href="/categories/%E6%95%99%E7%A8%8B/">教程</a>
+                      <a class="hover-with-bg" href="/categories/%E4%B8%8A%E7%8F%AD%E6%97%A5%E8%AE%B0/">上班日记</a>
                     
                   </div>
                 
@@ -272,9 +264,9 @@ git subtree push --prefix build origin gh-pages <span class="hljs-comment">//部
                   <div class="post-meta">
                     <i class="iconfont icon-tags"></i>
                     
-                      <a class="hover-with-bg" href="/tags/github-pages/">github pages</a>
+                      <a class="hover-with-bg" href="/tags/%E5%AE%9E%E4%B9%A0/">实习</a>
                     
-                      <a class="hover-with-bg" href="/tags/webapp/">webapp</a>
+                      <a class="hover-with-bg" href="/tags/%E7%94%9F%E6%B4%BB/">生活</a>
                     
                   </div>
                 
@@ -287,18 +279,12 @@ git subtree push --prefix build origin gh-pages <span class="hljs-comment">//部
                   <article class="post-prev col-6">
                     
                     
-                      <a href="/2020/09/07/article-3/">
-                        <i class="iconfont icon-arrowleft"></i>
-                        <span class="hidden-mobile">我的第一次实习</span>
-                        <span class="visible-mobile">上一篇</span>
-                      </a>
-                    
                   </article>
                   <article class="post-next col-6">
                     
                     
-                      <a href="/2020/09/04/article-1/">
-                        <span class="hidden-mobile">从0到1使用 Hexo 框架搭建个人博客并部署到 GitHub Pages</span>
+                      <a href="/2020/09/07/art3/">
+                        <span class="hidden-mobile">我的第一次实习</span>
                         <span class="visible-mobile">下一篇</span>
                         <i class="iconfont icon-arrowright"></i>
                       </a>
@@ -497,7 +483,7 @@ git subtree push --prefix build origin gh-pages <span class="hljs-comment">//部
     var typed = new Typed('#subtitle', {
       strings: [
         '  ',
-        "使用github pages在线运行自己写的react/vue项目&nbsp;",
+        "上班第二天&nbsp;",
       ],
       cursorChar: "_",
       typeSpeed: 70,
