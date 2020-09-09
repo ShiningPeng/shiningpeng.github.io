@@ -4,6 +4,33 @@
   
   
   <entry>
+    <title>the third day</title>
+    <link href="/2020/09/09/art5/"/>
+    <url>/2020/09/09/art5/</url>
+    
+    <content type="html"><![CDATA[<h2 id="快乐的切图仔"><a href="#快乐的切图仔" class="headerlink" title="快乐的切图仔"></a>快乐的切图仔</h2><ul><li><p>这几天都是在切图，可能接下来连续的几天还是切页面，但是我觉得也是能锻炼到自己的切图能力，在这过程中可能会接触一些平常不怎么用的样式或者说常见样式的高级用法等</p></li><li><p>上手写页面时多尝试，比如今天有个看上去像是图标的东西，UI没有切出来，于是考虑用基本html和css写出来，果然很快就写出来了，本人练的少，做出来感觉挺高兴的，我就不贴图丢人了</p></li><li><p>这三天就写了三个页面，登录注册以及重置密码，切图有点慢，这还没有加上逻辑，逻辑应该是前端加的吧，后端只是做简单的验证就行，等等，想起来上课的时候老师问的一个问题，逻辑写在前端还是后端验证起来更快，这我确实没想过，明天问问同事。</p></li><li><p>写页面的过程中也慢慢将vue的那部分记忆找回来了，vue指令，绑定类名，样式等</p></li></ul><h2 id="加油"><a href="#加油" class="headerlink" title="加油"></a>加油</h2>]]></content>
+    
+    
+    <categories>
+      
+      <category>上班日记</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>实习</tag>
+      
+      <tag>生活</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>上班第二天</title>
     <link href="/2020/09/08/art4/"/>
     <url>/2020/09/08/art4/</url>
