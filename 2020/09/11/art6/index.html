@@ -18,7 +18,7 @@
   <meta name="description" content="ShiningPeng&#39;s Blog">
   <meta name="author" content="ShiningPeng">
   <meta name="keywords" content="">
-  <title>the third day - ShiningPeng&#39;s Blog</title>
+  <title>四 - ShiningPeng&#39;s Blog</title>
 
   <link  rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/4.4.1/css/bootstrap.min.css" />
 
@@ -150,7 +150,7 @@
 </nav>
 
     <div class="banner intro-2" id="background" parallax=true
-         style="background: url('/img/default.png') no-repeat center center;
+         style="background: url('/img/winter.jpg') no-repeat center center;
            background-size: cover;">
       <div class="full-bg-img">
         <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
@@ -163,8 +163,8 @@
               
   <div class="mt-3 post-meta">
     <i class="iconfont icon-date-fill" aria-hidden="true"></i>
-    <time datetime="2020-09-09 23:50" pubdate>
-      2020年9月9日 晚上
+    <time datetime="2020-09-11 00:03" pubdate>
+      2020年9月11日 凌晨
     </time>
   </div>
 
@@ -174,7 +174,7 @@
     
     <span class="post-meta mr-2">
       <i class="iconfont icon-chart"></i>
-      291 字
+      717 字
     </span>
   
 
@@ -184,7 +184,7 @@
       <i class="iconfont icon-clock-fill"></i>
       
       
-      2
+      8
        分钟
     </span>
   
@@ -222,26 +222,82 @@
         <div class="py-5" id="board">
           <article class="post-content mx-auto" id="post">
             <!-- SEO header -->
-            <h1 style="display: none">the third day</h1>
+            <h1 style="display: none">四</h1>
             
               <p class="note note-info">
                 
-                  本文最后更新于：2020年9月10日 凌晨
+                  本文最后更新于：2020年9月11日 凌晨
                 
               </p>
             
             <div class="markdown-body" id="post-body">
-              <h2 id="快乐的切图仔"><a href="#快乐的切图仔" class="headerlink" title="快乐的切图仔"></a>快乐的切图仔</h2><ul>
-<li><p>这几天都是在切图，可能接下来连续的几天还是切页面，但是我觉得也是能锻炼到自己的切图能力，在这过程中可能会接触一些平常不怎么用的样式或者说常见样式的高级用法等</p>
+              <h2 id="事情多"><a href="#事情多" class="headerlink" title="事情多"></a>事情多</h2><ul>
+<li><p>第一天去上班把伞落在共享电动车上，无了，大学掉的第三把伞，这两天买的遮阳伞到了，洗完澡发现又黑了，害，一言难尽。</p>
 </li>
-<li><p>上手写页面时多尝试，比如今天有个看上去像是图标的东西，UI没有切出来，于是考虑用基本html和css写出来，果然很快就写出来了，本人练的少，做出来感觉挺高兴的，我就不贴图丢人了</p>
+<li><p>还没有在学校办理实习申请，因为第一周可以退改选，所以直接没去上课去上班了，平时也没什么时间，第二周再找老师申请一下。</p>
 </li>
-<li><p>这三天就写了三个页面，登录注册以及重置密码，切图有点慢，这还没有加上逻辑，逻辑应该是前端加的吧，后端只是做简单的验证就行，等等，想起来上课的时候老师问的一个问题，逻辑写在前端还是后端验证起来更快，这我确实没想过，明天问问同事。</p>
+<li><p>学校的封闭管理好像不是很严，以前从寝室外围的洞里直接走出校，最近洞被封了，都是直接从校门出去，然后到公交站等车，一般都是提前十几二十分钟到公司。</p>
 </li>
-<li><p>写页面的过程中也慢慢将vue的那部分记忆找回来了，vue指令，绑定类名，样式等</p>
+<li><p>工作中体验到合作的感觉，我写前端页面，UI小哥问我有没有什么还需要再切的，和他沟通，感觉还挺好的，今天也问了带我的宇哥蛮多问题的，超过十分钟没有解决就立刻问，以面耽误进度，不过我今天进度还是有点慢，调结构和样式调了蛮久。所以打算之后自己写页面有些原则，写好结构调样式一直调不好，更换页面结构，换个角度思考解决方案。</p>
 </li>
 </ul>
-<h2 id="加油"><a href="#加油" class="headerlink" title="加油"></a>加油</h2>
+<h2 id="记一些笔记"><a href="#记一些笔记" class="headerlink" title="记一些笔记"></a>记一些笔记</h2><ul>
+<li><p>给元素设置图片背景</p>
+<ol>
+<li>将图片放在一个盒子中作为子元素，使用定位定好，但需要注意宽高的设置，否则容易出现拉伸图片或者超出盒子等问题，举个栗子<pre><code class="hljs html"><span class="hljs-tag">&lt;<span class="hljs-name">view</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;top-wrapper&quot;</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">view</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;top-bgi&quot;</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;/static/pc-images/banner.png&quot;</span> <span class="hljs-attr">alt</span> /&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">view</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">view</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;top-content&quot;</span>&gt;</span>
+      ...
+    <span class="hljs-tag">&lt;/<span class="hljs-name">view</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">view</span>&gt;</span></code></pre>
+<pre><code class="hljs css"><span class="hljs-selector-class">.top-wrapper</span> &#123;
+<span class="hljs-attribute">width</span>: <span class="hljs-number">100%</span>;
+<span class="hljs-attribute">height</span>: <span class="hljs-number">7.73rem</span>;
+<span class="hljs-attribute">position</span>: relative;
+<span class="hljs-attribute">z-index</span>: <span class="hljs-number">1</span>;
+<span class="hljs-attribute">display</span>: flex;
+<span class="hljs-attribute">align-items</span>: flex-end;
+<span class="hljs-attribute">justify-content</span>: center;
+&#125;
+<span class="hljs-selector-class">.top-bgi</span> &#123;
+  <span class="hljs-attribute">height</span>: <span class="hljs-number">100%</span>;
+  <span class="hljs-attribute">position</span>: absolute;
+  <span class="hljs-attribute">top</span>: <span class="hljs-number">0</span>;
+  <span class="hljs-attribute">left</span>: <span class="hljs-number">0</span>;
+  <span class="hljs-attribute">z-index</span>: -<span class="hljs-number">1</span>;
+&#125;
+<span class="hljs-selector-class">.top-bgi</span> <span class="hljs-selector-tag">img</span> &#123;
+  <span class="hljs-attribute">width</span>: <span class="hljs-number">100vw</span>;
+  <span class="hljs-attribute">line-height</span>: <span class="hljs-number">0</span>;
+  <span class="hljs-attribute">height</span>: <span class="hljs-number">100%</span>;
+&#125;</code></pre></li>
+</ol>
+<ul>
+<li>主要是和宽高和定位有关的样式，其他的一些样式是用作别的功能的。</li>
+<li>定位用作父子元素，父元素设置position:relative;子元素设置position:absolute;然后通过top,left,right,bottom来控制子元素的位置</li>
+</ul>
+<ol start="2">
+<li>给这个元素设置background属性，并且设置几个相关的属性进行调整便可<pre><code class="hljs html"><span class="hljs-tag">&lt;<span class="hljs-name">view</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;img-wrapper&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">view</span>&gt;</span>
+``` 
+```css
+.img-wrapper &#123;
+width: 4.53rem;
+height: 2.09rem;
+background: url(/static/pc-images/judge.png);
+background-size: 100% 100%;
+&#125;</code></pre>
+</li>
+</ol>
+</li>
+<li><p>写页面时尽量使用弹性布局，以及使用rem单位等从多个方面考虑兼容性，暂时我写的是pc端，可能这块考虑的不是很多，后面有机会接触移动端再总结。</p>
+</li>
+</ul>
+<h2 id="加速"><a href="#加速" class="headerlink" title="加速"></a>加速</h2><ul>
+<li>一天八小时就写了半个简单的首页和一个header组件，加快速度啊，感觉带我的老哥有点那啥了，他自己也在边切哈哈哈哈。</li>
+</ul>
+
             </div>
             <hr>
             <div>
@@ -273,18 +329,12 @@
                   <article class="post-prev col-6">
                     
                     
-                      <a href="/2020/09/11/art6/">
-                        <i class="iconfont icon-arrowleft"></i>
-                        <span class="hidden-mobile">四</span>
-                        <span class="visible-mobile">上一篇</span>
-                      </a>
-                    
                   </article>
                   <article class="post-next col-6">
                     
                     
-                      <a href="/2020/09/08/art4/">
-                        <span class="hidden-mobile">上班第二天</span>
+                      <a href="/2020/09/09/art5/">
+                        <span class="hidden-mobile">the third day</span>
                         <span class="visible-mobile">下一篇</span>
                         <i class="iconfont icon-arrowright"></i>
                       </a>
@@ -483,7 +533,7 @@
     var typed = new Typed('#subtitle', {
       strings: [
         '  ',
-        "the third day&nbsp;",
+        "四&nbsp;",
       ],
       cursorChar: "_",
       typeSpeed: 70,
