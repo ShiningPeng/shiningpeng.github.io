@@ -369,7 +369,7 @@ watch:&#123;
     currentType: <span class="hljs-keyword">async</span> <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>&#123;
       <span class="hljs-built_in">this</span>.getList();
     &#125;
-&#125;<span class="hljs-number">0</span>,
+&#125;,
 methods:&#123;
   currentChange(index) &#123;
       <span class="hljs-built_in">this</span>.currentType = index;
@@ -516,7 +516,7 @@ methods:&#123;
 
 <ul>
 <li>以前没有真正的写过项目，都是自己弄着玩，所以以前根本就没用过 try，catch 这个东西，但是这次写项目时遇到个问题刚好需要用到这个，所以加上了</li>
-<li>遇到的问题：场景是这样的，用户注册账号后的第一次登录如果是用户名登录，登录请求时会报错提示你为了安全起见，第一次必须使用电话号码加验证码登录，在这个过程中，后端通过请求的用户名找到该用户的电话号码并返回，但不是正常地用一个变量接收，会抛出异常，而是会在响应体中接收到，请求的结果里。这时用 try 包裹发起请求的这个函数，然后在 catch 中就可以捕获异常，在这个异常中就是后端返回的结果，手机号就在里面，拿到手机号后就弹框给用户发验证码</li>
+<li>遇到的问题：场景是这样的，用户注册账号后的第一次登录如果是用户名登录，登录请求时会报错提示你为了安全起见，第一次必须使用电话号码加验证码登录，在这个过程中，后端通过请求的用户名找到该用户的电话号码并返回，但不是正常地用一个变量接收，会抛出异常，而是会在响应体中接收到请求的结果。这时用 try 包裹发起请求的这个函数，然后在 catch 中就可以捕获异常，在这个异常中就是后端返回的结果，手机号就在里面，拿到手机号后就弹框给用户发验证码</li>
 </ul>
 <hr>
 <ol start="8">
@@ -536,7 +536,7 @@ methods:&#123;
 <span class="hljs-tag">&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">el-pagination</span>&gt;</span></code></pre>
 
 <ul>
-<li>使用的是 elementui 的分页组件，配置项可以看文档，实现分页功能主要是点击上一页下一页以及点击第几页的数字数字时的点击事件，而这三个点击事件都被绑定在@current-change 这个属性，这个属性绑定一个函数，最重要的是这个函数可以接收一个参数，这个参数就是点击后的页码，可以使用这个参数做些需要做的事</li>
+<li>使用的是 elementui 的分页组件，配置项可以看文档，实现分页功能主要是点击上一页下一页以及点击页码时的点击事件，而这三个点击事件都被绑定在@current-change 这个属性，这个属性绑定一个函数，最重要的是这个函数可以接收一个参数，这个参数就是点击后的页码，可以使用这个参数做些需要做的事</li>
 </ul>
 <pre><code class="hljs js">methods:&#123;
   pageChange(page) &#123;
@@ -551,7 +551,7 @@ methods:&#123;
 <li>echarts</li>
 </ol>
 <ul>
-<li>新手，只了解九牛一毛，这里只是把我写好的部分分享，有看到需要的属性可以去试试，更多的还是看<br><a target="_blank" rel="noopener" href="https://echarts.apache.org/zh/tutorial.html#5%20%E5%88%86%E9%92%9F%E4%B8%8A%E6%89%8B%20ECharts">官方文档</a><br><img src="/img/echarts-example.jpg" srcset="/img/loading.gif">，网上也有很多教程</li>
+<li>新手，只了解九牛一毛，这里只是把我写好的部分分享，有看到需要的属性可以去试试，更多的还是看<a target="_blank" rel="noopener" href="https://echarts.apache.org/zh/tutorial.html#5%20%E5%88%86%E9%92%9F%E4%B8%8A%E6%89%8B%20ECharts">官方文档</a>，网上也有很多教程<br><img src="/img/echarts-example.jpg" srcset="/img/loading.gif"></li>
 </ul>
 <pre><code class="hljs js"><span class="hljs-comment">// 引入基本模板</span>
 <span class="hljs-keyword">let</span> echarts = <span class="hljs-built_in">require</span>(<span class="hljs-string">&quot;echarts/lib/echarts&quot;</span>);
