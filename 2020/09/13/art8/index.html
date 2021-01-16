@@ -150,7 +150,7 @@
 </nav>
 
     <div class="banner intro-2" id="background" parallax=true
-         style="background: url('/img/winter.jpg') no-repeat center center;
+         style="background: url('/img/hill.jpg') no-repeat center center;
            background-size: cover;">
       <div class="full-bg-img">
         <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
@@ -226,7 +226,7 @@
             
               <p class="note note-info">
                 
-                  本文最后更新于：2020年9月13日 晚上
+                  本文最后更新于：2021年1月16日 晚上
                 
               </p>
             
@@ -244,16 +244,16 @@
 <li><p>这个功能用vue的双向数据绑定实现起来就很简单，结合指令能达到比较好的效果</p>
 <pre><code class="hljs html"><span class="hljs-comment">&lt;!-- tab --&gt;</span>
 <span class="hljs-tag">&lt;<span class="hljs-name">view</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;treaty-header&quot;</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-name">button</span></span>
-<span class="hljs-tag">    <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;treaty-btn btn-sse&quot;</span></span>
-<span class="hljs-tag">    <span class="hljs-attr">:class</span>=<span class="hljs-string">&quot;treatyActive === &#x27;sse&#x27;?&#x27;treaty-active&#x27;:&#x27;&#x27;&quot;</span></span>
-<span class="hljs-tag">    @<span class="hljs-attr">click</span>=<span class="hljs-string">&quot;treatyActive = &#x27;sse&#x27;&quot;</span></span>
-<span class="hljs-tag">  &gt;</span>SSE<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-name">button</span></span>
-<span class="hljs-tag">    <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;treaty-btn btn-eth&quot;</span></span>
-<span class="hljs-tag">    <span class="hljs-attr">:class</span>=<span class="hljs-string">&quot;treatyActive === &#x27;eth&#x27;?&#x27;treaty-active&#x27;:&#x27;&#x27;&quot;</span></span>
-<span class="hljs-tag">    @<span class="hljs-attr">click</span>=<span class="hljs-string">&quot;treatyActive = &#x27;eth&#x27;&quot;</span></span>
-<span class="hljs-tag">  &gt;</span>ETH<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+  &lt;button
+    class=&quot;treaty-btn btn-sse&quot;
+    :class=&quot;treatyActive === &#x27;sse&#x27;?&#x27;treaty-active&#x27;:&#x27;&#x27;&quot;
+    @click=&quot;treatyActive = &#x27;sse&#x27;&quot;
+  &gt;SSE<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+  &lt;button
+    class=&quot;treaty-btn btn-eth&quot;
+    :class=&quot;treatyActive === &#x27;eth&#x27;?&#x27;treaty-active&#x27;:&#x27;&#x27;&quot;
+    @click=&quot;treatyActive = &#x27;eth&#x27;&quot;
+  &gt;ETH<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
 <span class="hljs-tag">&lt;/<span class="hljs-name">view</span>&gt;</span>
 
 <span class="hljs-comment">&lt;!-- tab对应的内容 --&gt;</span>
@@ -274,7 +274,7 @@
   <span class="hljs-tag">&lt;/<span class="hljs-name">view</span>&gt;</span>
 <span class="hljs-tag">&lt;/<span class="hljs-name">view</span>&gt;</span>
 <span class="hljs-tag">&lt;/<span class="hljs-name">view</span>&gt;</span></code></pre>
-<pre><code class="hljs js">data() &#123;
+<pre><code class="hljs js"><span class="hljs-function"><span class="hljs-title">data</span>(<span class="hljs-params"></span>)</span> &#123;
   <span class="hljs-keyword">return</span> &#123;
     treatyActive:<span class="hljs-string">&#x27;sse&#x27;</span>
   &#125;
